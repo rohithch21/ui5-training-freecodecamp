@@ -5,7 +5,8 @@
     
 
     <Text text="Text Object from view"></Text>
-    <Button text="Hi Click Me!" press="onClickHello"></Button>
+    <Button text="{i18n>FirstButtonText}" press="onClickHello"></Button>
+    <Input value="{/recipients/name}" description="Hello {/recipients/name}" valueLiveUpdate="true" width="30%" showValueHelp="true"></Input>
 
 
 </mvc:View>
