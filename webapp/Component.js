@@ -8,12 +8,7 @@ sap.ui.define([
     // this runs only once while starting the app
     return UIComponent.extend("sap.ui.demo.walkthrough.Component", {
         metadata: {
-            rootView: {
-                "viewName" : "sap.ui.demo.walkthrough.view.App",
-                "type" : "XML",
-                "async" : true,
-                "id" : "app"
-            }
+            manifest: "json"
         },
         /*
         note : while setting data model centrally, do not try binding a controller to a particular view like - 
@@ -30,13 +25,6 @@ sap.ui.define([
             }
             var oModel = new JSONModel(Odata);
             this.setModel(oModel);
-
-             var i18nModel = new ResourceModel({
-                bundleName: "sap.ui.demo.walkthrough.i18n.i18n",
-                supportLocales: [""],
-                fallbackLocale: ""
-            });
-            this.setModel(i18nModel, "i18n");
         }
     })
 });
