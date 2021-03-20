@@ -1,12 +1,15 @@
-<mvc:View
-    xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc"
-    controllerName="sap.ui.demo.walkthrough.controller.App">
-    
-
-    <Text text="Text Object from view"></Text>
-    <Button text="{i18n>FirstButtonText}" press="onClickHello"></Button>
-    <Input value="{/recipients/name}" description="Hello {/recipients/name}" valueLiveUpdate="true" width="30%" showValueHelp="true"></Input>
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="sap.ui.demo.walkthrough.controller.App" displayBlock="true">
+    <App>
+        <pages>
+            <Page title="{i18n>homePageTitle}">
+                <content>
+                    <mvc:XMLView 
+                        viewName="sap.ui.demo.walkthrough.view.MainPanel">
+                    </mvc:XMLView>
+                </content>
+            </Page>
+        </pages>
+    </App>
 
 
 </mvc:View>

@@ -1,0 +1,10 @@
+<mvc:View  xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="sap.ui.demo.walkthrough.controller.MainPanel">
+    <Panel headerText="{i18n>homePagePanelTilte}" class="sapUiResponsiveMargin" width="auto">
+        <content>
+            <Text text="Text Object from view" class="sapUiSmallMarginEnd"></Text>
+            <Button text="{i18n>FirstButtonText}" press="onClickHello" class="sapUiSmallMarginEnd"></Button>
+            <Input value="{/recipients/name}" description="Hello {/recipients/name}" valueLiveUpdate="true" width="30%" showValueHelp="true" class="sapUiSmallMarginEnd"></Input>
+            <Button text="{i18n>helloDialogButton}" press="onClickHelloDialog"></Button>
+        </content>
+    </Panel>
+</mvc:View>

@@ -1,0 +1,5 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+    <Dialog id= "helloDialog" title="Hello Dialog">
+        <Button id="_IDEGen_button008" text="{i18n>cancel}" press=".onClickCloseDialog"/>
+    </Dialog>
+</core:FragmentDefinition>
