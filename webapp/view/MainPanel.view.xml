@@ -4,7 +4,7 @@
             <Text text="Text Object from view" class="sapUiSmallMarginEnd"></Text>
             <Button text="{i18n>FirstButtonText}" press="onClickHello" class="sapUiSmallMarginEnd"></Button>
             <Input value="{/recipients/name}" description="Hello {/recipients/name}" valueLiveUpdate="true" width="30%" showValueHelp="true" class="sapUiSmallMarginEnd"></Input>
-            <Button text="{i18n>helloDialogButton}" press="onClickHelloDialog"></Button>
+            <Button icon="sap-icon://hello-world" text="{i18n>helloDialogButton}" press="onClickHelloDialog"></Button>
         </content>
     </Panel>
 </mvc:View>

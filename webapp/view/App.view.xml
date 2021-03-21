@@ -6,6 +6,9 @@
                     <mvc:XMLView 
                         viewName="sap.ui.demo.walkthrough.view.MainPanel">
                     </mvc:XMLView>
+                    <mvc:XMLView 
+                        viewName="sap.ui.demo.walkthrough.view.InvoiceList">
+                    </mvc:XMLView>
                 </content>
             </Page>
         </pages>
